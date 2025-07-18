@@ -21,7 +21,7 @@
     "laraxgram/conditionable": "^3.0",
     "laraxgram/contracts": "^3.0",
     "laraxgram/macroable": "^3.0",
-    "laraxgram/carbon": "^1"
+    "laraxgram/tempora": "^1"
   },
   "autoload": {
     "psr-4": {
