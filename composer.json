@@ -1,0 +1,47 @@
+{
+  "name": "laraxgram/support",
+  "description": "The LaraGram Support package.",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/laraxgram/core/issues",
+    "source": "https://github.com/laraxgram/core"
+  },
+  "authors": [
+    {
+      "name": "LaraGram",
+      "email": "laraxgram@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "ext-ctype": "*",
+    "ext-filter": "*",
+    "ext-mbstring": "*",
+    "laraxgram/collections": "^3.0",
+    "laraxgram/conditionable": "^3.0",
+    "laraxgram/contracts": "^3.0",
+    "laraxgram/macroable": "^3.0",
+    "laraxgram/carbon": "^1"
+  },
+  "autoload": {
+    "psr-4": {
+      "LaraGram\\Support\\": ""
+    },
+    "files": [
+      "functions.php",
+      "helpers.php"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0.x-dev"
+    }
+  },
+  "suggest": {
+    "laraxgram/filesystem": "Required to use the Composer class (^3.0)."
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
+}
