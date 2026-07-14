@@ -3,14 +3,18 @@
 namespace LaraGram\Support\Facades;
 
 /**
- * @method static create(callable $callback)
- * @method static start(string $name)
- * @method static getAnswers(int|string $user_id)
- * @method static getAnswer(int|string $user_id, string|int $name)
- * @method static void macro(string $name, object|callable $macro)
- * @method static void mixin(object $mixin, bool $replace = true)
- * @method static bool hasMacro(string $name)
- * @method static void flushMacros()
+ * @method static void start(string $name, array $parameters = [])
+ * @method static \LaraGram\Conversation\InlineConversationBuilder inline(\Closure $builder)
+ * @method static \LaraGram\Conversation\InlineConversationBuilder ask(string $prompt, string $name = 'answer')
+ * @method static void startInline(array $payload, array $parameters = [])
+ * @method static void create(\Closure $callback)
+ * @method static bool handle(\LaraGram\Request\Request $request)
+ * @method static bool active()
+ * @method static array|null state()
+ * @method static \LaraGram\Conversation\AnswersBag answers()
+ * @method static void cancel(string $reason = 'manual')
+ *
+ * @see \LaraGram\Conversation\ConversationManager
  */
 class Conversation extends Facade
 {
@@ -19,7 +23,7 @@ class Conversation extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor(): string
+    protected static function getFacadeAccessor()
     {
         return 'conversation';
     }

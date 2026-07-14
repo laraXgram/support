@@ -19,24 +19,30 @@ class DefaultProviders
     public function __construct(?array $providers = null)
     {
         $this->providers = $providers ?: [
+            \LaraGram\Request\AntiFlood\AntiFloodServiceProvider::class,
             \LaraGram\Auth\AuthServiceProvider::class,
             \LaraGram\Bus\BusServiceProvider::class,
             \LaraGram\Cache\CacheServiceProvider::class,
-            \LaraGram\Conversation\ConversationServiceProvider::class,
             \LaraGram\Foundation\Providers\ConsoleSupportServiceProvider::class,
             \LaraGram\Concurrency\ConcurrencyServiceProvider::class,
+            \LaraGram\Conversation\ConversationServiceProvider::class,
+            \LaraGram\Cookie\CookieServiceProvider::class,
             \LaraGram\Database\DatabaseServiceProvider::class,
             \LaraGram\Encryption\EncryptionServiceProvider::class,
             \LaraGram\Filesystem\FilesystemServiceProvider::class,
             \LaraGram\Foundation\Providers\FoundationServiceProvider::class,
             \LaraGram\Hashing\HashServiceProvider::class,
             \LaraGram\Keyboard\KeyboardServiceProvider::class,
+            \LaraGram\Pagination\PaginationServiceProvider::class,
             \LaraGram\Pipeline\PipelineServiceProvider::class,
+            \LaraGram\Request\Proxy\ProxyServiceProvider::class,
             \LaraGram\Queue\QueueServiceProvider::class,
             \LaraGram\Redis\RedisServiceProvider::class,
+            \LaraGram\Session\SessionServiceProvider::class,
             \LaraGram\Template\TemplateServiceProvider::class,
             \LaraGram\Translation\TranslationServiceProvider::class,
             \LaraGram\Validation\ValidationServiceProvider::class,
+            \LaraGram\View\ViewServiceProvider::class,
         ];
     }
 
