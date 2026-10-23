@@ -21,6 +21,7 @@ class DefaultProviders
         $this->providers = $providers ?: [
             \LaraGram\Request\AntiFlood\AntiFloodServiceProvider::class,
             \LaraGram\Auth\AuthServiceProvider::class,
+            \LaraGram\Broadcasting\BroadcastServiceProvider::class,
             \LaraGram\Bus\BusServiceProvider::class,
             \LaraGram\Cache\CacheServiceProvider::class,
             \LaraGram\Foundation\Providers\ConsoleSupportServiceProvider::class,
@@ -30,6 +31,7 @@ class DefaultProviders
             \LaraGram\Database\DatabaseServiceProvider::class,
             \LaraGram\Encryption\EncryptionServiceProvider::class,
             \LaraGram\Filesystem\FilesystemServiceProvider::class,
+            \LaraGram\Image\ImageServiceProvider::class,
             \LaraGram\Foundation\Providers\FoundationServiceProvider::class,
             \LaraGram\Hashing\HashServiceProvider::class,
             \LaraGram\Keyboard\KeyboardServiceProvider::class,
